@@ -4,17 +4,39 @@ ul {
     padding: 0px
 }
 
-section {
-    border-bottom: 1px solid black;
-}
-
 li {
-    display: inline;
+    display: inline-block;
 }
 
 .header {
     margin: 0 auto;
+    width: 100vw;
+    height: 700px;
+    left: -20px;
     text-align: center;
-    background: url("../images/header-bg.png") center no-repeat;
+    background: url("../images/header-bg.png") no-repeat;
     background-color: transparent;
+    background-size: cover;
+    /* background-position: center; */
+    /* min-height: 725px;
+    max-height: 800px; */
+    /* background-attachment: fixed */
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    left: -223px;
+    z-index: -1;
+}
+
+.nav {
+    vertical-align: middle;
+    height: 85px;
+}
+
+.logo {
+    z-index: 10;
+    width: 94px;
+    height: auto;
 }
