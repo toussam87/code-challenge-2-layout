@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #f7f7f7
+    background-color: #f7f7f7;
 }
 
 ul {
@@ -39,7 +39,7 @@ hr {
 .heading {
     width: 100%;
     height: auto;
-    z-index: -1;
+    z-index: 10;
 }
 
 .container {
@@ -62,16 +62,19 @@ hr {
 .bicycle-section-one,
 .bicycle-section-two,
 .bicycle-section-three,
-.bicycle-section-four {
+.bicycle-section-four,
+.social-media,
+.discoverUs {
     display: block;
     position: relative;
     text-align: center;
     background-color: #f7f7f7;
-    font-size: calc(13px + .2vw);
+    font-size: 0;
     width: 100%;
 }
 
-.bicycle-section-one p {
+.bicycle-section-one p,
+.social-media p {
     line-height: 2em;
     padding-bottom: 90px
 }
@@ -81,16 +84,21 @@ hr {
     padding-bottom: 10px;
 }
 
-.about-us {
+.about-us,
+.social-media {
     text-align: center;
     width: 80vw;
     margin: 0 auto;
     font-size: 18px;
 }
 
+.social-media {
+    width: 50vw;
+}
+
 .bicycle-section-two .left-section,
 .bicycle-section-three .right-section {
-    width: 65%;
+    width: 67%;
     min-width: 680px;
     height: auto;
     position: relative;
@@ -98,10 +106,12 @@ hr {
 }
 
 .bicycle-1,
-.bicycle-4 {
+.bicycle-4,
+.bicycle-5,
+.bicycle-7 {
     width: 100%;
     height: auto;
-    min-height: 430px;
+    min-height: 450px;
 }
 
 .bicycle-1-icon,
@@ -112,19 +122,37 @@ hr {
 }
 
 .bicycle-section-two .right-section,
-.bicycle-section-three .left-section {
+.bicycle-section-three .left-section,
+.bicycle-section-four .left-section,
+.bicycle-section-four .right-section,
+.discoverUs .left-column,
+.discoverUs .right-column {
     display: inline-block;
     text-align: center;
-    width: 35%;
+    width: 33%;
     min-width: 275px;
-    margin-left: -4px;
     background-color: #fff;
     position: relative;
 }
 
+.bicycle-5-icon {
+    position: absolute;
+    top: 45%;
+    left: 28%;
+}
+
+.bicycle-section-four .center-section,
+.discoverUs .center-column {
+    width: 34%;
+    display: inline-block;
+    position: relative;
+}
+
 .bicycle-section-two .right-section p,
-.bicycle-section-three .right-section p {
+.bicycle-section-three .left-section p,
+.bicycle-section-four .center-section p {
     /* width: 80%; */
+    font-size: calc(13px + .1vw);
     line-height: calc(22px + .2vw);
     margin: 0 auto;
     padding-bottom: calc(24px - 0.2vw);
@@ -132,7 +160,17 @@ hr {
 
 .copy-blurb {
     width: calc(80% + .2vw);
-    margin: calc(2vw * 1.5) auto;
+    margin: calc(3 * 1vw) auto;
+    /* height: calc(19 * .9vw); */
+    min-height: calc(16 * 1vw);
+}
+
+.bicycle-section-three .copy-blurb {
+    margin: calc(2 * 1.2vw) auto
+}
+
+.bicycle-section-four .copy-blurb {
+    margin: calc(1 * .8vw) auto;
 }
 
 .bicycle-2-icon {
@@ -164,10 +202,40 @@ hr {
     max-height: 200px;
 }
 
-.bicyle-3-icon {
+.bicycle-3-icon {
     margin: 0 auto;
     display: block;
     width: 20px;
     height: auto;
     padding: 30px 0px 0px;
+}
+
+.twitter-icon {
+    width: 32px;
+    height: auto;
+    padding: 50px 0 20px;
+}
+
+.headline {
+    display: block;
+}
+
+.carousel-nav {
+    padding-bottom: 40px;
+}
+
+.discoverUs-1 {
+    width: 50%;
+    height: auto;
+}
+
+.discoverUs-2 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.discoverUs-3 {
+    width: 50%;
+    height: auto;
 }
