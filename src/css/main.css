@@ -133,6 +133,7 @@ hr {
     min-width: 275px;
     background-color: #fff;
     position: relative;
+    vertical-align: top;
 }
 
 .bicycle-5-icon {
@@ -224,18 +225,49 @@ hr {
     padding-bottom: 40px;
 }
 
-.discoverUs-1 {
+.discoverUs {
+    /* background-color: red; */
+    height: 600px;
+    overflow: hidden;
+}
+
+.discoverUs-1,
+.discoverUs-2,
+.discoverUs-7,
+.discoverUs-8 {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+}
+
+.discoverUs-4,
+.discoverUs-5 {
     width: 50%;
     height: auto;
 }
 
-.discoverUs-2 {
+.discoverUs-5 {
+    vertical-align: top;
+}
+
+.discoverUs-3,
+.discoverUs-6 {
     width: 100%;
     height: auto;
-    display: block;
 }
 
-.discoverUs-3 {
-    width: 50%;
-    height: auto;
+.discover-shop {
+    background-color: #000;
+    height: 300px;
+}
+
+.discover-shop span {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid #fff;
+    top: 87%;
+    position: absolute;
+    left: 45%;
 }
