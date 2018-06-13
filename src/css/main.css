@@ -162,6 +162,16 @@ li:nth-child(4)::after {
     vertical-align: top;
 }
 
+.discoverUs .right-column {
+    display: inline-block;
+    text-align: center;
+    width: 34%;
+    min-width: 275px;
+    background-color: #fff;
+    position: relative;
+    vertical-align: top;
+}
+
 .footer .left-column,
 .footer .center-column,
 .footer .right-column {
@@ -201,15 +211,24 @@ li:nth-child(4)::after {
     text-align: justify;
 }
 
-.copy-blurb {
+.bicycle-section-two .copy-blurb {
     width: calc(80% + .2vw);
     margin: calc(3 * 1vw) auto;
     /* height: calc(19 * .9vw); */
-    min-height: calc(16 * 1vw);
+    min-height: calc(19 * 1vw);
 }
 
 .bicycle-section-three .copy-blurb {
-    margin: calc(2 * 1.2vw) auto
+    width: calc(80% + .2vw);
+    margin: calc(3 * 1vw) auto;
+    /* height: calc(19 * .9vw); */
+    min-height: calc(19 * 1vw);
+}
+
+.bicycle-section-four .copy-blurb {
+    width: calc(80% + .2vw);
+    margin: calc(2 * 1.2vw) auto;
+    min-height: calc(19 * 1.01vw);
 }
 
 .bicycle-section-four .copy-blurb {
@@ -265,13 +284,12 @@ li:nth-child(4)::after {
     display: inline-block;
     font-size: 14px;
     color: #353738;
-
 }
 
 .headline::after {
     content: "/";
     padding: 0px 10px;
-    color:#96999a;
+    color: #96999a;
 }
 
 .supporting {
@@ -286,9 +304,10 @@ li:nth-child(4)::after {
     padding-bottom: 40px;
 }
 
+
 /* .discoverUs {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
+font-family: 'Lato', sans-serif;
+font-size: 16px;
 } */
 
 .discoverUs-1,
@@ -300,9 +319,13 @@ li:nth-child(4)::after {
     display: inline-block;
 }
 
-.discoverUs-4,
+.discoverUs-4 {
+    width: 49%;
+    height: auto;
+}
+
 .discoverUs-5 {
-    width: 50%;
+    width: 51%;
     height: auto;
 }
 
@@ -314,12 +337,12 @@ li:nth-child(4)::after {
 .discoverUs-6 {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .discover-shop {
     background-color: #282f35;
     padding: 80px 0;
-    
 }
 
 .discover-shop span {
@@ -339,6 +362,7 @@ li:nth-child(4)::after {
 .email-us {
     background-color: #fff;
     height: 300px;
+    text-align: center;
 }
 
 .email-us-icon {
@@ -356,7 +380,6 @@ li:nth-child(4)::after {
     display: block;
     color: #848789;
     font-family: 'Lato', sans-serif;
-
 }
 
 .email-address {
