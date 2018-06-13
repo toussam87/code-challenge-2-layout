@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #f7f7f7;
+    color: #848789;
 }
 
 ul {
@@ -24,6 +25,12 @@ h2 {
     font-size: calc(24px + .2vw);
     margin-top: calc(10px + .2vw);
     margin-bottom: calc(10px + .2vw);
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: #353738;
 }
 
 hr {
@@ -49,14 +56,25 @@ hr {
 
 .nav {
     vertical-align: middle;
-    height: 85px;
+    height: 125px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    /* margin: 0px 30px; */
+}
+
+li:nth-child(1)::after,
+li:nth-child(4)::after {
+    content: ".";
+    padding: 25px;
 }
 
 .logo {
     z-index: 10;
     width: 94px;
     height: auto;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 .bicycle-section-one,
@@ -82,7 +100,9 @@ hr {
 .bicycle-section-one p,
 .social-media p {
     line-height: 2em;
-    padding-bottom: 90px
+    padding-bottom: 90px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }
 
 .about-us-icon {
@@ -93,7 +113,7 @@ hr {
 .about-us,
 .social-media {
     text-align: center;
-    width: 80vw;
+    width: 62vw;
     margin: 0 auto;
     font-size: 18px;
 }
@@ -176,6 +196,9 @@ hr {
     line-height: calc(22px + .2vw);
     margin: 0 auto;
     padding-bottom: calc(24px - 0.2vw);
+    font-family: 'Lato', sans-serif;
+    text-justify: inter-word;
+    text-align: justify;
 }
 
 .copy-blurb {
@@ -238,17 +261,35 @@ hr {
 
 .headline {
     display: block;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    font-size: 14px;
+    color: #353738;
+
+}
+
+.headline::after {
+    content: "/";
+    padding: 0px 10px;
+    color:#96999a;
+}
+
+.supporting {
+    color: #96999a;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
 }
 
 .carousel-nav {
     padding-bottom: 40px;
 }
 
-.discoverUs {
-    /* background-color: red; */
-    /* height: 600px; */
-    /* overflow: hidden; */
-}
+/* .discoverUs {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+} */
 
 .discoverUs-1,
 .discoverUs-2,
@@ -278,17 +319,21 @@ hr {
 .discover-shop {
     background-color: #282f35;
     padding: 80px 0;
+    
 }
 
 .discover-shop span {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 10px 40px;
     border: 1px solid #fff;
     top: 84%;
     position: absolute;
     left: 43%;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
 }
 
 .email-us {
@@ -306,22 +351,29 @@ hr {
 
 .email-us span {
     margin: 0 auto;
-    font-size: 13px;
+    font-size: 18px;
     font-style: italic;
     display: block;
+    color: #848789;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .email-address {
     width: 300px;
-    height: 20px;
+    height: 40px;
     margin: 15px 0
 }
 
 .email-submit {
-    width: 35px;
-    height: 75px;
-    font-size: 40px;
-    margin: 5px;
+    width: 75px;
+    height: 45px;
+    font-size: 18px;
+    margin: 15px 0px 15px 5px;
+    background-color: #64c29e;
+    color: #fff;
+    border: none;
+    padding: 0px;
 }
 
 .emailAddress,
@@ -330,10 +382,12 @@ hr {
 }
 
 .footer {
-    height: 150px;
+    /* height: 150px; */
     vertical-align: middle;
     /* display: table-cell; */
     /* vertical-align: middle; */
+    margin: 60px 0px;
+    font-family: 'Lato', sans-serif;
 }
 
 .footer .left-column {
@@ -343,10 +397,30 @@ hr {
 
 .footer .right-column {
     text-align: right;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footer .right-column::after {
+    content: url('../images/YEBOLogo-footer.png');
+    vertical-align: middle;
+    padding: 10px;
 }
 
 .twitter-footer-icon,
 .fb-footer-icon,
 .pinterest-footer-icon {
     padding: 3px;
+}
+
+address {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.street {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
 }
