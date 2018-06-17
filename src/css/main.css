@@ -100,7 +100,7 @@ li:nth-child(4)::after {
 .bicycle-section-one p,
 .social-media p {
     line-height: 2em;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
@@ -114,7 +114,7 @@ li:nth-child(4)::after {
 .social-media {
     text-align: center;
     width: 62vw;
-    margin: 0 auto;
+    margin: 80px auto 40px;
     font-size: 18px;
 }
 
@@ -150,9 +150,7 @@ li:nth-child(4)::after {
 .bicycle-section-two .right-section,
 .bicycle-section-three .left-section,
 .bicycle-section-four .left-section,
-.bicycle-section-four .right-section,
-.discoverUs .left-column,
-.discoverUs .right-column {
+.bicycle-section-four .right-section {
     display: inline-block;
     text-align: center;
     width: 33%;
@@ -162,7 +160,7 @@ li:nth-child(4)::after {
     vertical-align: top;
 }
 
-.discoverUs .right-column {
+/* .discoverUs .right-column {
     display: inline-block;
     text-align: center;
     width: 34%;
@@ -170,7 +168,7 @@ li:nth-child(4)::after {
     background-color: #fff;
     position: relative;
     vertical-align: top;
-}
+} */
 
 .footer .left-column,
 .footer .center-column,
@@ -214,21 +212,22 @@ li:nth-child(4)::after {
 .bicycle-section-two .copy-blurb {
     width: calc(80% + .2vw);
     margin: calc(3 * 1vw) auto;
-    /* height: calc(19 * .9vw); */
-    min-height: calc(19 * 1vw);
+    height: calc(19 * .9vw);
+    min-height: 265px;
 }
 
 .bicycle-section-three .copy-blurb {
     width: calc(80% + .2vw);
     margin: calc(3 * 1vw) auto;
-    /* height: calc(19 * .9vw); */
-    min-height: calc(19 * 1vw);
+    height: calc(19 * .9vw);
+    min-height: 265px;
 }
 
 .bicycle-section-four .copy-blurb {
     width: calc(80% + .2vw);
     margin: calc(2 * 1.2vw) auto;
-    min-height: calc(19 * 1.01vw);
+    min-height: 314px;
+    height: calc(19 * 1vw);
 }
 
 .bicycle-section-four .copy-blurb {
@@ -258,7 +257,8 @@ li:nth-child(4)::after {
 }
 
 .bicycle-2,
-.bicycle-3 {
+.bicycle-3,
+.bicycle-6 {
     z-index: -10;
     width: 100%;
     max-height: 200px;
@@ -286,11 +286,17 @@ li:nth-child(4)::after {
     color: #353738;
 }
 
-.headline::after {
+.headline::before {
+    content: url('../images/twitter-icon.png');
+    /* vertical-align: middle; */
+    padding: 22px;
+    display: block;
+}
+/* .headline::after {
     content: "/";
     padding: 0px 10px;
     color: #96999a;
-}
+} */
 
 .supporting {
     color: #96999a;
@@ -299,10 +305,10 @@ li:nth-child(4)::after {
     font-size: 14px;
     font-weight: 100;
 }
-
+/* 
 .carousel-nav {
     padding-bottom: 40px;
-}
+} */
 
 
 /* .discoverUs {
@@ -310,24 +316,93 @@ font-family: 'Lato', sans-serif;
 font-size: 16px;
 } */
 
-.discoverUs-1,
-.discoverUs-2,
+.discoverUs {
+    display: grid;
+    grid-template-columns: fit-content(100vw)
+}
+
+/* .discoverUs .left-column {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+}
+
+.discoverUs .right-column {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 34% 33% 33%;
+} */
+
+.discoverUs-1 {
+    grid-column: 1;
+    width: 100%;
+}
+
+.discoverUs-2 {
+    grid-column: 2;
+    width: 100%;
+}
+
+.discoverUs-3 {
+    grid-column: 1 / span 2;
+    width: 100%;
+    grid-row: 2;
+}
+
+.discoverUs-4 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    width: 100%;
+}
+
+.discoverUs-5 {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    width: 100%;
+}
+
+.discoverUs-6 {
+    grid-column: 5 / span 2;
+    width: 100%;
+    grid-row: 1;
+}
+
+.discoverUs-7 {
+    grid-column: 5;
+    /* grid-row: 2; */
+    width: 100%;
+}
+
+.discoverUs-8 {
+    grid-column: 6;
+    width: 100%;
+}
+/* 
+.discoverUs-3 {
+    width: 100%;
+    display: block;
+}
+
+.discoverUs-4 {
+    width: 100%;
+}
+
 .discoverUs-7,
 .discoverUs-8 {
     width: 50%;
     height: auto;
     display: inline-block;
-}
+} */
 
-.discoverUs-4 {
-    width: 49%;
+/* /* .discoverUs-4 {
+    width: 50%;
     height: auto;
 }
 
 .discoverUs-5 {
-    width: 51%;
+    width: 50%;
     height: auto;
-}
+} 
 
 .discoverUs-5 {
     vertical-align: top;
@@ -337,12 +412,13 @@ font-size: 16px;
 .discoverUs-6 {
     width: 100%;
     height: auto;
-    display: block;
-}
+    display: block; 
+} */
 
 .discover-shop {
     background-color: #282f35;
     padding: 80px 0;
+    text-align: center;
 }
 
 .discover-shop span {
@@ -351,9 +427,9 @@ font-size: 16px;
     text-transform: uppercase;
     padding: 10px 40px;
     border: 1px solid #fff;
-    top: 84%;
+    /* top: 84%;
     position: absolute;
-    left: 43%;
+    left: 43%; */
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 200;
@@ -390,13 +466,14 @@ font-size: 16px;
 
 .email-submit {
     width: 75px;
-    height: 45px;
+    height: 47px;
     font-size: 18px;
     margin: 15px 0px 15px 5px;
     background-color: #64c29e;
     color: #fff;
     border: none;
     padding: 0px;
+    vertical-align: -10%;
 }
 
 .emailAddress,
@@ -424,6 +501,10 @@ font-size: 16px;
     font-weight: 200;
 }
 
+.footer .right-column span {
+    vertical-align: 60%;
+}
+
 .footer .right-column::after {
     content: url('../images/YEBOLogo-footer.png');
     vertical-align: middle;
@@ -446,4 +527,15 @@ address {
     font-size: 16px;
     font-weight: 600;
     font-style: normal;
+}
+
+.a {
+    width: 75%;
+    display: inline-block;
+}
+
+.b {
+    width: 25%;
+    display: inline-block;
+    margin-left: -4px;
 }
