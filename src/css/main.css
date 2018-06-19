@@ -22,10 +22,10 @@ section {
 }
 
 h2 {
-    margin: calc(10px + .4vw) auto;
+    margin: 1vw auto;
     /* margin-bottom: calc(10px + .2vw); */
     font-family: 'Lato', sans-serif;
-    font-size: calc(24px + .2vw);
+    font-size: 1vw;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bolder;
@@ -34,7 +34,7 @@ h2 {
 
 hr {
     width: 20px;
-    margin: calc(40px - 1vw) auto;
+    margin: 2vw auto;
 }
 
 .header {
@@ -120,13 +120,20 @@ li:nth-child(4)::after {
     width: 50vw;
 }
 
-.bicycle-section-two .left-section,
+.bicycle-section-two .left-section {
+    grid-column: 1 / span 2;
+}
+
+.bicycle-section-two .right-section {
+    grid-column: 3;
+}
+
+.bicycle-section-three .left-section {
+    grid-column: 1;
+}
+
 .bicycle-section-three .right-section {
-    width: 67%;
-    min-width: 680px;
-    height: auto;
-    position: relative;
-    display: inline-block;
+    grid-column: 2 / span 2;
 }
 
 .bicycle-1,
@@ -145,7 +152,7 @@ li:nth-child(4)::after {
     left: 44%;
 }
 
-.bicycle-section-two .right-section,
+/* .bicycle-section-two .right-section,
 .bicycle-section-three .left-section,
 .bicycle-section-four .left-section,
 .bicycle-section-four .right-section {
@@ -156,7 +163,8 @@ li:nth-child(4)::after {
     /* background-color: #fff; */
     position: relative;
     vertical-align: top;
-}
+    background-color: #fff;
+} */
 
 /* .discoverUs .right-column {
     display: inline-block;
@@ -198,8 +206,8 @@ li:nth-child(4)::after {
 .bicycle-section-three .left-section p,
 .bicycle-section-four .center-section-top p {
     /* width: 80%; */
-    font-size: calc(1 * 1vw);
-    line-height: calc(2 * 1vw);
+    font-size: 1vw;
+    line-height: 2vw;
     margin: 0 auto;
     /* padding-bottom: calc(24px - 0.2vw); */
     font-family: 'Lato', sans-serif;
@@ -215,10 +223,11 @@ li:nth-child(4)::after {
 }
 
 .bicycle-section-three .copy-blurb {
-    width: calc(80% + .2vw);
-    margin: calc(3 * 1vw) auto;
-    height: calc(19 * .9vw);
-    min-height: 265px;
+    width: 80%;
+    margin: 1vw auto;
+    /* height: calc(19 * .9vw); */
+    /* min-height: 265px; */
+    /* background-color: #fff; */
 }
 
 .bicycle-section-four .copy-blurb {
@@ -229,15 +238,15 @@ li:nth-child(4)::after {
 }
 
 .bicycle-section-four .copy-blurb {
-    margin: calc(1 * 1vw) auto
+    margin: 1vw auto;
 }
 
 .bicycle-2-icon {
     margin: 0 auto;
     display: block;
-    width: calc(2vw + 0.2vw);
+    width: 20px;
     height: auto;
-    padding-top: calc(1vw + 0.2vw);
+    padding: 3vw 0px 0px;
 }
 
 .arrow-down {
@@ -269,7 +278,7 @@ li:nth-child(4)::after {
     display: block;
     width: 20px;
     height: auto;
-    padding: 30px 0px 0px;
+    padding: 3vw 0px 0px;
 }
 
 .twitter-icon {
@@ -316,10 +325,13 @@ font-family: 'Lato', sans-serif;
 font-size: 16px;
 } */
 
+.bicycle-section-two,
+.bicycle-section-three,
 .bicycle-section-four {
     display: grid;
     grid-template-columns: 33% 34% 33%;
 }    
+
 
 .bicycle-section-four .left-section {
     grid-column: 1;
